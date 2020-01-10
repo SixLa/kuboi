@@ -1,66 +1,92 @@
+/* Blanc : #FFFFFF
+Gris clair : #F2F2F2
+Bleu clair : #BDDADC
+Gris foncé : #707070
+Presque noir : #252525 */
+
 @viewport {
     width: device-width;
-  }
-html, body {
+}
+
+html,
+body {
     font-family: Museo Sans For Dell;
-    }
+}
 
-   body {
+body {
+    margin: 0;
+}
 
-    }
+h1 {}
 
-   h1 {
+h2 {
+    font-size: 20px;
+}
 
-    }
+p,
+ul,
+li,
+td {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
 
-   h2 {
-   font-size: 20px;
-    }
-   p,ul,li,td {
-   margin: 0;
-   list-style: none;
-   text-align: center;
-   padding: 10px;
-    }
-   a:link {
-    
-    }
-   a:visited {
-  
-    }
-   a:hover {
-    
-   }
-   a:active, a:focus {
-  
-   }
+a:link {}
 
-   .toutepage{
-       display: inline-flex;
-   }
+a:visited {}
 
-   .barregauche{
-    background-color: whitesmoke ;
-    float:left;
-    width: 160px;
-   }
+a:hover {
+    color: #707070;
+}
 
-   .hautbarregauche{
+a:active,
+a:focus {}
+
+.barrerecherche {
+    background-color: #F2F2F2;
+    text-align: right;
+    vertical-align: middle;
+    height: 5vh;
+}
+
+.doublemenuetcentre {
+    display: inline-flex;
+}
+
+.barregauche {
+    background-color: #FFFFFF;
+    float: left;
+    width: 10vw;
+    word-wrap: break-word;
+}
+
+.hautbarregauche {
     background-color: #bddadc;
-   }
+    color: white;
+    height: 10vh;
+}
 
-   .contenucentre{
-       background-image: url(Images/bgdimg.jpg);
-       background-repeat: no-repeat;
-       overflow: hidden;
-   }
+.basbarregauche {
+    height: 85vh;
+}
 
-   .barredroite{
+.contenucentre {
+    background-image: url(Images/bgdimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+}
+
+.barredroite {
     background-color: #bddadc;
-    float:right;
-    width: 160px;
-   }
+    color: #ffffff;
+    float: right;
+    width: 10vw;
+    word-wrap: break-word;
+}
 
-   #logobarredroite{
+#logobarredroite {
     height: 120px;
-   }
+}
