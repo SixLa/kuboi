@@ -1,0 +1,66 @@
+@viewport {
+    width: device-width;
+  }
+html, body {
+    font-family: Museo Sans For Dell;
+    }
+
+   body {
+
+    }
+
+   h1 {
+
+    }
+
+   h2 {
+   font-size: 20px;
+    }
+   p,ul,li,td {
+   margin: 0;
+   list-style: none;
+   text-align: center;
+   padding: 10px;
+    }
+   a:link {
+    
+    }
+   a:visited {
+  
+    }
+   a:hover {
+    
+   }
+   a:active, a:focus {
+  
+   }
+
+   .toutepage{
+       display: inline-flex;
+   }
+
+   .barregauche{
+    background-color: whitesmoke ;
+    float:left;
+    width: 160px;
+   }
+
+   .hautbarregauche{
+    background-color: #bddadc;
+   }
+
+   .contenucentre{
+       background-image: url(Images/bgdimg.jpg);
+       background-repeat: no-repeat;
+       overflow: hidden;
+   }
+
+   .barredroite{
+    background-color: #bddadc;
+    float:right;
+    width: 160px;
+   }
+
+   #logobarredroite{
+    height: 120px;
+   }
