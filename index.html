@@ -91,19 +91,30 @@
 
                 <!-- Contenu de la partie centrale -->
                 <div class=listeusers>
-                    <h2>Pseudo</h2>
-                    <ul id="listedesprenoms">
-                    </ul>
-                    <input id="texte">
-                    <button id="ajouter">Ajouter</button>
-                    <button id="supprimer">Supprimer</button>
 
                     <!-- Tests API -->
 
-                    <div class=listedesgens>
-                    </div>
-                </div>
+                    <table>
+                        <caption>Liste des inscrits</caption>
 
+                        <tr>
+                            <th>Sexe</th>
+                            <th>Prénom</th>
+                            <th>Nationalité</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Date d'inscription</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
             <!-- Menu de droite de l'utilisateur -->
@@ -131,10 +142,9 @@
 
         <!-- Scripts -->
 
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <script src="js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/jquery.simpleAccordion.min.js"></script>
-        <script src="js/index.js"></script>
         <script>
             $(document).ready(function() {
                 $('.myNav').simpleAccordion();
