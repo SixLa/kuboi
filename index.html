@@ -1,6 +1,3 @@
-<!-- A ajouter : menu déroulant, menu accordéon, contenu des pages -->
-
-
 <!doctype html>
 <html lang="fr">
 
@@ -16,66 +13,133 @@
 <body>
 
     <div class=toutepage>
+
+        <!-- Barre de recherche en haut -->
+
         <div class=barrerecherche>
             <input type="text" placeholder="Que cherchez-vous ?">
             <i class="fas fa-search"></i>
         </div>
+
+        <!-- Totalité du menu de gauche (administrateur)-->
+
         <div class=doublemenuetcentre>
             <div class=barregauche>
+
+                <!-- Identification de l'administrateur -->
+
                 <div class=hautbarregauche>
-                    <p>Bonjour</p>
-                    <p>Gérard</p>
+                    <img src="Images/portraitadmin.jpg" id="portraitadmin">
+                    <p>BONJOUR</p>
+                    <p>GERALDINE</p>
                     <a>Se déconnecter</a>
                 </div>
+
+                <!-- Menu de l'administrateur -->
+
+                <!-- <div class=basbarregauche> -->
                 <div class=basbarregauche>
-                    <ul>
-                        <li>
-                            <h2><a>Messages</a></h2>
+                    <ul class="myNav">
+                        <li class="myNav-item ui-accordion-item">
+                            <a class="myNav-link ui-accordion-trigger" href="#"><i class="fas fa-envelope"></i> Messages</a>
+                            <ul class="myNav-content ui-accordion-content">
+                                <li><a href="#">Boîte de réception</a></li>
+                                <li><a href="#">Messages archivés</a></li>
+                            </ul>
                         </li>
-                        <ul>
-                            <li><a>Boîte de réception</a></li>
-                            <li><a>Messages archivés</a></li>
-                        </ul>
-                        <li>
-                            <h2><a>Liste des utilisateurs</a></h2>
+                        <li class="myNav-item ui-accordion-item">
+                            <a class="myNav-link ui-accordion-trigger" href="#"><i class="fas fa-users"></i> Utilisateurs</a>
+                            <ul class="myNav-content ui-accordion-content">
+                                <li><a href="#">Liste des utilisateurs</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <h2><a>Prochains évènements</a></h2>
+                        <li class="myNav-item ui-accordion-item">
+                            <a class="myNav-link ui-accordion-trigger" href="#"> <i class="fas fa-calendar-alt"></i> Prochains évènements</a>
+                            <ul class="myNav-content ui-accordion-content">
+                                <li><a href="#">Liste des évènements</a></li>
+                                <li><a href="#">Ajouter un évènement</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <h2><a>Lieux partenaires</a></h2>
+                        <li class="myNav-item ui-accordion-item">
+                            <a class="myNav-link ui-accordion-trigger" href="#"><i class="fas fa-map-marked-alt"></i>  Lieux partenaires</a>
+                            <ul class="myNav-content ui-accordion-content">
+                                <li><a href="#">Liste des lieux partenaires</a></li>
+                                <li><a href="#">Ajouter un partenaire</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <h2><a>Liste des jeux</a></h2>
+                        <li class="myNav-item ui-accordion-item">
+                            <a class="myNav-link ui-accordion-trigger" href="#"> <i class="fas fa-dice"></i> Liste des jeux</a>
+                            <ul class="myNav-content ui-accordion-content">
+                                <li><a href="#">Voir tous les jeux</a></li>
+                                <li><a href="#">Ajouter un jeu</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
 
 
+            <!-- Partie centrale -->
+
             <div class=contenucentre>
-                <h1>Kuboï</h1>
+
+                <!-- Titre de la partie centrale -->
+
+                <div class=titrecontenucentre>
+                    <h2>Liste des utilisateurs</h2>
+                </div>
+
+                <!-- Contenu de la partie centrale -->
+                <div class=listeusers>
+                    <h2>Pseudo</h2>
+                    <ul id="listedesprenoms">
+                    </ul>
+                    <input id="texte">
+                    <button id="ajouter">Ajouter</button>
+                    <button id="supprimer">Supprimer</button>
+
+                    <!-- Tests API -->
+
+                    <div class=listedesgens>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Menu de droite de l'utilisateur -->
 
             <div class=barredroite>
                 <img src="Images/logo.png" alt="Logo Kuboï" id=logobarredroite>
                 <ul>
                     <li>
-                        <h2><a>Mon profil</a></h2>
+                        <a><i class="fas fa-user"></i> Mon profil</a>
+
                     </li>
                     <li>
-                        <h2><a>Me géolocaliser</a></h2>
+                        <a><i class="fas fa-map-marker-alt"></i> Me géolocaliser</a>
                     </li>
                     <li>
-                        <h2><a>Rejoindre un évènement</a></h2>
+                        <a><i class="fas fa-calendar-plus"></i> Rejoindre un évènement</a>
                     </li>
                     <li>
-                        <h2><a>Les jeux</a></h2>
+                        <a><i class="fas fa-puzzle-piece"></i> Les jeux</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+
+
+        <!-- Scripts -->
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/jquery.simpleAccordion.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.myNav').simpleAccordion();
+            });
+        </script>
 </body>
 
 </html>

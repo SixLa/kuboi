@@ -17,8 +17,6 @@ body {
     margin: 0;
 }
 
-h1 {}
-
 h2 {
     font-size: 20px;
 }
@@ -29,31 +27,38 @@ li,
 td {
     margin: 0;
     list-style: none;
-    text-align: center;
     padding: 5px;
 }
 
-a:link {}
-
-a:visited {}
-
+a:link,
+a:visited,
 a:hover {
     color: #707070;
+    text-decoration: none;
 }
 
-a:active,
-a:focus {}
+
+/* Barre de recherche */
 
 .barrerecherche {
     background-color: #F2F2F2;
-    text-align: right;
-    vertical-align: middle;
     height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 5px;
 }
+
+
+/* Tout la page sauf recherche */
 
 .doublemenuetcentre {
     display: inline-flex;
 }
+
+
+/* Barre de gauche */
 
 .barregauche {
     background-color: #FFFFFF;
@@ -62,15 +67,55 @@ a:focus {}
     word-wrap: break-word;
 }
 
+
+/* Identification de l'administrateur*/
+
 .hautbarregauche {
     background-color: #bddadc;
     color: white;
-    height: 10vh;
+    height: 20vh;
+    text-align: center;
 }
 
-.basbarregauche {
-    height: 85vh;
+#portraitadmin {
+    height: 75px;
+    padding: 10px;
+    border-radius: 50%;
 }
+
+
+/* Menu de l'administrateur */
+
+.basbarregauche {
+    height: 75vh;
+    color: #707070;
+}
+
+.basbarregauche ul li a:hover {
+    background-color: #BDDADC;
+    text-decoration: none;
+}
+
+.myNav-link {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 22px;
+}
+
+.ui-accordion-content {
+    display: none;
+    text-decoration: none;
+    color: #707070;
+}
+
+.active>.ui-accordion-content {
+    display: block;
+}
+
+
+/* Partie centrale */
 
 .contenucentre {
     background-image: url(Images/bgdimg.jpg);
@@ -79,14 +124,39 @@ a:focus {}
     width: 80vw;
 }
 
+.titrecontenucentre {
+    background-color: white;
+    text-align: center;
+    font-family: 'Gill Sans MT', sans-serif;
+    color: #707070;
+    border: dotted #bddadc 3px;
+    margin: 25px 100px;
+    ;
+}
+
+.listeusers {
+    background-color: white;
+}
+
+
+/* Menu de droite de l'utilisateur */
+
 .barredroite {
     background-color: #bddadc;
     color: #ffffff;
     float: right;
-    width: 10vw;
+    width: 9vw;
     word-wrap: break-word;
+    font-size: 20px;
+    height: 95hv;
 }
 
 #logobarredroite {
     height: 120px;
+}
+
+.barredroite ul {}
+
+.barredroite a:hover {
+    cursor: pointer;
 }
