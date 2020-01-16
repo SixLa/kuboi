@@ -128,14 +128,54 @@ a:hover {
     background-color: white;
     text-align: center;
     font-family: 'Gill Sans MT', sans-serif;
+    text-transform: uppercase;
     color: #707070;
     border: dotted #bddadc 3px;
     margin: 25px 100px;
     ;
 }
 
-.listeusers {
+table {
+    border: medium solid #bddadc;
     background-color: white;
+    border-collapse: collapse;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    color: #707070;
+}
+
+table tr th {
+    font-family: 'Gill Sans MT';
+    text-transform: uppercase;
+    color: #bddadc;
+    ;
+}
+
+.iconesuser {
+    color: #bddadc;
+}
+
+.iconesuser a:hover {
+    color: #F2F2F2;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    width: 5vw;
+    margin: auto;
+    font-size: 18px;
+}
+
+.page {
+    border: solid #bddadc 1px;
+    background-color: white;
+}
+
+.page a:hover {
+    background-color: #bddadc;
 }
 
 
@@ -154,8 +194,6 @@ a:hover {
 #logobarredroite {
     height: 120px;
 }
-
-.barredroite ul {}
 
 .barredroite a:hover {
     cursor: pointer;
